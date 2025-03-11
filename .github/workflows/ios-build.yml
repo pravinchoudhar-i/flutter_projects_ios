@@ -3,10 +3,10 @@ name: iOS Build
 on:
   push:
     branches:
-      - test  # Run when pushing to main branch 
+      - main  # Run when pushing to main branch 
   pull_request:
     branches:
-      - test  # Run on pull requests
+      - main  # Run on pull requests
 
 jobs:
   build-ios:
