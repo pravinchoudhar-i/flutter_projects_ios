@@ -1,5 +1,6 @@
 # Flutter Pod helper script
 load File.join(File.dirname(__FILE__), 'Flutter', 'flutter_export_environment.rb')
+load File.join(File.dirname(__FILE__), 'Flutter', 'podhelper.rb')  # ✅ Add this line to load podhelper
 
 platform :ios, '12.0'
 
@@ -17,6 +18,5 @@ target 'Runner' do
   use_frameworks!
   use_modular_headers!
 
-  flutter_install_all_ios_pods(File.dirname(File.realpath(__FILE__)))
-
+  flutter_install_all_ios_pods(File.dirname(File.realpath(__FILE__)))  # ✅ Now this will work!
 end
