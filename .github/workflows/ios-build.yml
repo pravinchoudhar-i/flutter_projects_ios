@@ -28,6 +28,11 @@ jobs:
           ls -l  # List files to check if pubspec.yaml exists
           flutter pub get
 
+      - name: Install CocoaPods Dependencies
+        run: |
+          cd ios
+          pod install
+
       - name: Build iOS (Without Code Signing)
         run: flutter build ios --no-codesign
 
