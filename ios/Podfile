@@ -1,4 +1,6 @@
-# Uncomment this line to define a global platform for your project
+# Flutter Pod helper script
+load File.join(File.dirname(__FILE__), 'Flutter', 'flutter_export_environment.rb')
+
 platform :ios, '12.0'
 
 ENV['COCOAPODS_DISABLE_STATS'] = 'true'
